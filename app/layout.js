@@ -4,6 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://www.entrepx.com"),
+  alternates: { canonical: "./" },
+  openGraph: { siteName: "EntrepX", type: "website", images: ["/media/hero-owner-van.jpg"] },
   title: { default: "EntrepX | The Franchise Alternative", template: "%s | EntrepX" },
   description:
     "A fractional leadership team, all your tech and a partner network, built around a business you own and can grow, pass on or sell. No royalties. $1,500/mo flat.",
