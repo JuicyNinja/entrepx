@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { QUESTIONS as Q, scoreSurvey } from "./surveyData";
 import LeadForm from "./LeadForm";
+import Link from "next/link";
 
 const Check = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M4 12l5 5L20 6" /></svg>
@@ -139,6 +140,7 @@ export default function ReadinessSurvey() {
             <div className="card"><span className="lbl">Pace</span><h3 className="h3">{pace}</h3><p className="small">From the hours you can give it.</p></div>
             <div className="card"><span className="lbl">Work on first</span><h3 className="h3">{[...r.gaps].map((g, i) => (i ? g.toLowerCase() : g)).join(" and ")}</h3><p className="small">{reserveLow ? "Your reserve is under 6 months. We’ll plan for that before you invest." : "We’ll cover both in your session."}</p></div>
           </div>
+          <div className="actions"><Link className="btn btn-secondary" href={`/opportunities?maxTier=${[0, 1, 2, 4][ans[3] ?? 0]}`}>See businesses that fit your budget</Link></div>
           <p className="fine" style={{ marginTop: "var(--space-4)" }}>A first read only. Your discovery session and Owner Assessment set the real placement.</p>
         </div>
       </section>

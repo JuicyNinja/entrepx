@@ -9,7 +9,7 @@ const links = [
   { href: "/partners", label: "Partners" },
   { href: "/build-value", label: "Build value" },
   { href: "/entrepx-vs-franchise", label: "Vs. franchise" },
-  { href: "/industries", label: "Industries" },
+  { href: "/opportunities", label: "Opportunities" },
   { href: "/book", label: "Book a session" },
 ];
 

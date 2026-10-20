@@ -59,7 +59,7 @@ export default function Compare() {
         </div>
       </section>
 
-      <Next title="See it in a real industry" href="/industries" label="Industry examples" />
+      <Next title="Browse the businesses we build" href="/opportunities" label="See opportunities" />
     </>
   );
 }

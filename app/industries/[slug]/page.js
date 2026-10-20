@@ -85,7 +85,7 @@ export default async function IndustryPage({ params }) {
       {others.length > 0 && (
         <section>
           <div className="wrap">
-            <header className="head"><h2 className="h1">Other businesses we build</h2></header>
+            <header className="head"><h2 className="h1">Other businesses we build</h2><p className="lead"><Link href="/opportunities">Browse all opportunities</Link></p></header>
             <div className="grid g3">
               {others.map((o) => (
                 <Link key={o.slug} className="card" href={`/industries/${o.slug}`} style={{ textDecoration: "none", padding: 0, overflow: "hidden" }}>

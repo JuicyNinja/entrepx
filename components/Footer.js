@@ -12,7 +12,7 @@ export default function Footer() {
             <Link href="/partners">Partners</Link>
             <Link href="/build-value">Build value</Link>
             <Link href="/entrepx-vs-franchise">Vs. franchise</Link>
-            <Link href="/industries">Industries</Link>
+            <Link href="/opportunities">Opportunities</Link>
             <Link href="/survey">Readiness survey</Link>
             <Link href="/book">Book a session</Link>
             <Link href="/#faq">FAQ</Link>

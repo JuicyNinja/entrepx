@@ -160,6 +160,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <div className="actions"><Link className="btn btn-secondary" href="/opportunities">Browse all 73 business opportunities</Link></div>
           <p className="fine" style={{ marginTop: "var(--space-5)" }}>Illustrative examples using sample job counts, average tickets and margins. Not a projection of your earnings.</p>
         </div>
       </section>
