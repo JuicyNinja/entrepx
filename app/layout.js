@@ -1,7 +1,5 @@
 import "./globals.css";
 import "./site.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export const metadata = {
   metadataBase: new URL("https://www.entrepx.com"),
@@ -25,11 +23,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800;900&family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap"
         />
       </head>
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

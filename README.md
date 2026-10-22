@@ -1,8 +1,11 @@
-# EntrepX website
+# EntrepX website and Command
 
-Next.js (App Router) marketing site for EntrepX: the franchise alternative.
+Next.js (App Router).
 
-- `npm install && npm run dev` to run locally.
-- `npm run build` runs `scripts/fetch-media.mjs` first, which downloads any media in `public/media` that isn't committed (the hero and resin video loops).
-- Content shared across pages lives in `components/content.js` and `components/surveyData.js`.
-- Forms are a preview: nothing is saved yet. The planned backend schema is `entrepx_portal_schema.sql` in the Claude project.
+- **Marketing site**: pages in `app/(site)/`. Content shared across pages lives in `components/content.js` and `components/surveyData.js`.
+- **EntrepX Command** (admin portal): `app/command/`, behind staff sign-in. Database schema in `supabase/migrations/`. Setup: `docs/command-setup.md`.
+
+Commands
+- `npm install && npm run dev` to run locally (copy `.env.example` to `.env.local` for the admin portal).
+- `npm run build` runs `scripts/fetch-media.mjs` first, which downloads any media in `public/media` that isn't committed.
+- `npm run test:db` checks the database migrations, business rules and row-level security in an in-memory Postgres.
