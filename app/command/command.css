@@ -1,0 +1,54 @@
+/* EntrepX Command (admin). Uses the tokens in globals.css. */
+.cmd{font-size:15px;line-height:1.5;background:var(--sand);color:var(--ink);min-height:100vh}
+.cmd section{padding-block:0}
+.cmd-app{display:flex;flex-wrap:wrap;min-height:100vh}
+.cmd-side{flex:1 1 220px;max-width:260px;background:var(--vault);color:var(--on-vault);padding:24px 14px;display:flex;flex-direction:column;gap:2px}
+.cmd-brand{padding:6px 12px 22px}
+.cmd-brand b{font-family:var(--font-display);font-weight:900;font-size:26px;letter-spacing:-.02em;line-height:1;display:block}
+.cmd-brand b span{color:var(--crimson)}
+.cmd-brand small{display:block;margin-top:6px;font-family:var(--font-label);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-vault-muted)}
+.cmd-nav{display:flex;align-items:center;min-height:40px;padding:0 12px;border-radius:var(--radius-md);color:var(--on-vault-muted);text-decoration:none;font-family:var(--font-label);font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase}
+.cmd-nav:hover{color:var(--on-vault);background:#3A2F29}
+.cmd-nav[aria-current="page"]{color:var(--on-vault);background:#4A3B33}
+.cmd-badge{margin-left:auto;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--on-vault);color:var(--vault);font-size:13px;letter-spacing:0;display:inline-flex;align-items:center;justify-content:center}
+.cmd-me{margin-top:auto;padding:16px 12px 0;border-top:1px solid #3A2F29;font-size:14px;color:var(--on-vault-muted)}
+.cmd-me button{margin-top:8px;background:none;border:0;padding:0;color:var(--on-vault);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline}
+.cmd-main{flex:999 1 560px;min-width:0;padding:28px 32px 56px;display:flex;flex-direction:column;gap:20px}
+@media (max-width:820px){.cmd-side{max-width:none;flex-basis:100%;flex-direction:row;flex-wrap:wrap;align-items:center;padding:12px}.cmd-brand{padding:0 12px 0 4px}.cmd-me{margin:0 0 0 auto;border:0;padding:0}.cmd-main{padding:20px 16px 40px}}
+.cmd-lbl{font-family:var(--font-label);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cmd-h1{font-family:var(--font-display);font-weight:800;font-size:32px;line-height:1.15;margin:0}
+.cmd-h2{font-family:var(--font-display);font-weight:700;font-size:19px;line-height:1.25;margin:0}
+.cmd-muted{color:var(--muted)}
+.cmd-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.cmd-head{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between}
+.cmd-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);padding:20px 24px;min-width:0}
+.cmd-card.flush{padding:16px 12px}
+.cmd-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.cmd-num{font-family:var(--font-label);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;font-size:40px;margin-top:8px}
+.cmd-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:var(--radius-md);font-family:var(--font-label);font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;white-space:nowrap}
+.cmd-btn:hover{background:var(--sand)}
+.cmd-btn.p{background:var(--crimson);border-color:var(--crimson);color:var(--on-crimson)}
+.cmd-btn.p:hover{background:var(--crimson-press)}
+.cmd-btn[disabled]{opacity:.5;cursor:not-allowed}
+.cmd-chip{display:inline-flex;align-items:center;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600;background:var(--sand);color:var(--espresso);white-space:nowrap}
+.cmd-chip.g{background:var(--equity-wash);color:var(--equity)}
+.cmd-chip.w{background:#FBF1E0;color:var(--caution)}
+.cmd-chip.o{background:#E9E3DF;color:#2B211C;box-shadow:inset 0 0 0 1px #2B211C}
+.cmd-chip.s{background:var(--espresso);color:#fff}
+.cmd-scroll{overflow-x:auto}
+.cmd-t{width:100%;border-collapse:collapse;font-size:15px}
+.cmd-t th{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);font-family:var(--font-label);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.cmd-t td{padding:12px;border-bottom:1px solid var(--line);vertical-align:middle}
+.cmd-t tr:last-child td{border-bottom:0}
+.cmd-link{color:var(--ink);font-weight:600;text-decoration:none}
+.cmd-link:hover{color:var(--crimson-text);text-decoration:underline}
+.cmd-input{height:44px;border:1px solid var(--line);border-radius:var(--radius-sm);padding:0 12px;font:inherit;font-size:16px;background:var(--card);color:var(--ink);width:100%}
+.cmd-field{display:flex;flex-direction:column;gap:6px}
+.cmd-empty{padding:28px 24px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.cmd-empty b{font-family:var(--font-display);font-size:20px}
+.cmd-cols{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px}
+.cmd-col{flex:0 0 240px;background:#EAE4E0;border-radius:var(--radius-md);padding:12px;display:flex;flex-direction:column;gap:8px}
+.cmd-deal{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);padding:10px 12px;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.cmd-err{background:var(--crimson-wash);color:var(--crimson-text);border-radius:var(--radius-md);padding:10px 14px;font-size:14px}
+.cmd-login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--vault)}
+.cmd-login .cmd-card{width:100%;max-width:420px;display:flex;flex-direction:column;gap:16px;padding:32px}
